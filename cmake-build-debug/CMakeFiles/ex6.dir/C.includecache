@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/marion/Documents/EFREI/l3-se-tp4-ipc/tube_shell.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+

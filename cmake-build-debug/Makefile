@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ex6
+
+# Build rule for target.
+ex6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ex6
+.PHONY : ex6
+
+# fast build rule for target.
+ex6/fast:
+	$(MAKE) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/build
+.PHONY : ex6/fast
+
+#=============================================================================
 # Target rules for targets named ex5
 
 # Build rule for target.
@@ -310,6 +323,33 @@ redirection_sdtout.c.s:
 	$(MAKE) -f CMakeFiles/ex2.dir/build.make CMakeFiles/ex2.dir/redirection_sdtout.c.s
 .PHONY : redirection_sdtout.c.s
 
+tube_shell.o: tube_shell.c.o
+
+.PHONY : tube_shell.o
+
+# target to build an object file
+tube_shell.c.o:
+	$(MAKE) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/tube_shell.c.o
+.PHONY : tube_shell.c.o
+
+tube_shell.i: tube_shell.c.i
+
+.PHONY : tube_shell.i
+
+# target to preprocess a source file
+tube_shell.c.i:
+	$(MAKE) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/tube_shell.c.i
+.PHONY : tube_shell.c.i
+
+tube_shell.s: tube_shell.c.s
+
+.PHONY : tube_shell.s
+
+# target to generate assembly for a file
+tube_shell.c.s:
+	$(MAKE) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/tube_shell.c.s
+.PHONY : tube_shell.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -318,6 +358,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ex6"
 	@echo "... ex5"
 	@echo "... ex4"
 	@echo "... ex3"
@@ -338,6 +379,9 @@ help:
 	@echo "... redirection_sdtout.o"
 	@echo "... redirection_sdtout.i"
 	@echo "... redirection_sdtout.s"
+	@echo "... tube_shell.o"
+	@echo "... tube_shell.i"
+	@echo "... tube_shell.s"
 .PHONY : help
 
 
