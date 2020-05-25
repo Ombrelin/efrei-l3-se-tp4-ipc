@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ex2.dir/redirection_sdtout.c.o  -o ex2 

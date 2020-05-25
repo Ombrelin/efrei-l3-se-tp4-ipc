@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/juste_prix.c
+stdlib.h
+-
+unistd.h
+-
+stdio.h
+-
+time.h
+-
+signal.h
+-
+

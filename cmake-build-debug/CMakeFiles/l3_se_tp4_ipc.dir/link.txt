@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/l3_se_tp4_ipc.dir/main.c.o CMakeFiles/l3_se_tp4_ipc.dir/redirection_sdtout.c.o  -o l3_se_tp4_ipc 

@@ -1,0 +1,6 @@
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/ex4.dir
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/ex3.dir
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/ex1.dir
+/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/ex2.dir
