@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ex4.dir/juste_prix.c.o"
-  "ex4.pdb"
   "ex4"
+  "ex4.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

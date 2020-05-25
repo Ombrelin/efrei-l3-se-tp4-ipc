@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/ex1.dir/fileno.c.o  -o ex1 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ex1.dir/fileno.c.o  -o ex1 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ex2.dir/redirection_sdtout.c.o"
-  "ex2.pdb"
   "ex2"
+  "ex2.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

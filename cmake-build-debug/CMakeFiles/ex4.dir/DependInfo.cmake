@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/arsen/git/l3-se-tp4-ipc/juste_prix.c" "/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/ex4.dir/juste_prix.c.o"
+  "/Users/marion/Documents/EFREI/l3-se-tp4-ipc/juste_prix.c" "/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles/ex4.dir/juste_prix.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

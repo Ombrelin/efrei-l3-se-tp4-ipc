@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/arsen/git/l3-se-tp4-ipc/redirection_sdtout.c
-stdio.h
+/Users/marion/Documents/EFREI/l3-se-tp4-ipc/producer_consumer.c
+unistd.h
 -
-fcntl.h
+stdlib.h
+-
+string.h
+-
+stdio.h
 -
 

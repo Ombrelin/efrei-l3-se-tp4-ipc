@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/arsen/git/l3-se-tp4-ipc
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/marion/Documents/EFREI/l3-se-tp4-ipc
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug
+-- Build files have been written to: /Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug

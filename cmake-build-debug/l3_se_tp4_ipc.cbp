@@ -8,209 +8,252 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ex4">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ex4/fast">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ex3">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ex3/fast">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ex1">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+			<Target title="ex5">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex1"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex5"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ex1/fast">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+			<Target title="ex5/fast">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex1/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex5/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex4">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex4/fast">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex3">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex3/fast">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex2">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex2/fast">
-				<Option output="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/ex2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/arsen/git/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex1">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex1/fast">
+				<Option output="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/copy.c">
+		<Unit filename="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/copy.c">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/fileno.c">
+		<Unit filename="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/fileno.c">
 			<Option target="ex1"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/juste_prix.c">
+		<Unit filename="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/juste_prix.c">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/redirection_sdtout.c">
+		<Unit filename="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/producer_consumer.c">
+			<Option target="ex5"/>
+		</Unit>
+		<Unit filename="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/redirection_sdtout.c">
 			<Option target="ex2"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/arsen/git/l3-se-tp4-ipc/CMakeLists.txt">
+		<Unit filename="/Users/marion/Documents/EFREI/l3-se-tp4-ipc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

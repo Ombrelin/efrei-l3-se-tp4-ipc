@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ex3.dir/copy.c.o"
-  "ex3.pdb"
   "ex3"
+  "ex3.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
