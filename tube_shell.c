@@ -9,59 +9,82 @@
 
 
 void simuler_tube_shell(char* cmd1, char* cmd2) {
-    int pid = fork();
     int mypipe[2];
+    int pid;
 
     if (pipe(mypipe) < 0) {
         perror("Error initialize pipe\n");
-        exit(255);
+        exit(EXIT_FAILURE);
     }
+
+    pid = fork();
 
     switch (pid) {
         case -1:
             perror("Error forking\n");
-            exit(255);
+            exit(EXIT_FAILURE);
         case 0:
-            close(mypipe[1]);
-
-//            char* res;
-
-//            read(mypipe[0], &res, sizeof(char)  * 100);
-
-//            char* c;
-//            char* args[10];
-//            int i = 0;
-//            c = strtok(cmd1, " ");
-//            do {
-//                args[i] = (char*) malloc(strlen(c) * sizeof(char));
-//                args[i] = c;
-//                c = strtok(NULL, " ");
-//                i++;
-//            }
-//            while (c != NULL);
+            if(close(mypipe[1]) < 0) {
+                perror("Erreur dans la fermeture du pipe niveau fils en ecriture\n");
+                exit(EXIT_FAILURE);
+            }
 
             dup2(mypipe[0], 0);
-//
 
-            close(mypipe[0]);
-            //            execv(args[0],  args+1);
-//            execl(cmd2, NULL);
+            if(close(mypipe[0]) < 0) {
+                perror("Erreur dans la fermeture du pipe niveau fils en lecture\n");
+                exit(EXIT_FAILURE);
+            }
+
+            char* c;
+
+            char* args[10];
+            int i = 0;
+            c = strtok(cmd2, " ");
+
+            do {
+                args[i] = (char*) malloc(strlen(c) * sizeof(char));
+                args[i] = c;
+                printf("%s\n", c);
+                c = strtok(NULL, " ");
+                i++;
+            }
+            while (c != NULL);
+
+            if (execvp(args[0], args) < 0) {
+                perror("Erreur exécution deuxieme commande\n");
+                exit(EXIT_FAILURE);
+            }
+
             exit(0);
-//            break;
         default:
-            close(mypipe[0]);
+            if(close(mypipe[0]) < 0){
+                perror("Erreur dans la fermeture du pipe niveau pere en lecture\n");
+                exit(EXIT_FAILURE);
+            }
 
             dup2(mypipe[1], 1);
-            close(mypipe[1]);
-            execl(cmd1, NULL);
-            exit(0);
-            break;
 
+            if(close(mypipe[1]) < 0){
+                perror("Erreur dans la fermeture du pipe niveau pere en ecriture\n");
+                exit(EXIT_FAILURE);
+            }
+
+            execlp(cmd1, cmd1, NULL);
+            exit(0);
     }
 }
 
 int main (int argc, char** argv) {
-    simuler_tube_shell("ls", "echo");
+    char cmd1[20];
+    printf("Premiere commande:\n");
+    fgets(cmd1,20,stdin);
+
+    char cmd2[20];
+    printf("Seconde commande:\n");
+    fgets(cmd2,20,stdin);
+
+    simuler_tube_shell(cmd1, cmd2);
     return 0;
 }
 
