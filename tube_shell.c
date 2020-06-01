@@ -40,13 +40,13 @@ void simuler_tube_shell(char* cmd1, char* cmd2) {
 
             char* args[10];
             int i = 0;
-            c = strtok(cmd2, " ");
+            c = strtok(cmd2, "\n");
 
             do {
                 args[i] = (char*) malloc(strlen(c) * sizeof(char));
                 args[i] = c;
                 printf("%s\n", c);
-                c = strtok(NULL, " ");
+                c = strtok(NULL, "\n");
                 i++;
             }
             while (c != NULL);
@@ -70,7 +70,14 @@ void simuler_tube_shell(char* cmd1, char* cmd2) {
                 exit(EXIT_FAILURE);
             }
 
-            execlp(cmd1, cmd1, NULL);
+            char* cmd;
+
+            cmd = strtok(cmd1, "\n");
+
+            if (execlp(cmd, cmd, NULL) < 0) {
+                perror("Erreur exécution première commande\n");
+                exit(EXIT_FAILURE);
+            }
             exit(0);
     }
 }
