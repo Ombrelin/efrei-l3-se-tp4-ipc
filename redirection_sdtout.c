@@ -1,13 +1,16 @@
 #include <stdio.h>
-#include <fcntl.h>
+#include <stdlib.h>
 
-//
-// Created by arsen on 25/05/2020.
-//
 void rediriger(char * filename){
-    printf("Avant redirection");
-    freopen("redirect.txt", "w", stdout);
-    printf("Après redirection");
+    printf("Avant redirection\n");
+    FILE* file = freopen(filename, "w", stdout);
+
+    if (file == NULL) {
+        perror("Error while opening file\n");
+        exit(EXIT_FAILURE);
+    }
+    printf("Après redirection\n");
+    fclose(file);
 }
 
 int main(int argc, char** argv){

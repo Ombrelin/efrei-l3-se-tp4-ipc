@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ex7
+
+# Build rule for target.
+ex7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ex7
+.PHONY : ex7
+
+# fast build rule for target.
+ex7/fast:
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/build
+.PHONY : ex7/fast
+
+#=============================================================================
 # Target rules for targets named ex6
 
 # Build rule for target.
@@ -269,6 +282,33 @@ juste_prix.c.s:
 	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/juste_prix.c.s
 .PHONY : juste_prix.c.s
 
+n_tubes_shell.o: n_tubes_shell.c.o
+
+.PHONY : n_tubes_shell.o
+
+# target to build an object file
+n_tubes_shell.c.o:
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/n_tubes_shell.c.o
+.PHONY : n_tubes_shell.c.o
+
+n_tubes_shell.i: n_tubes_shell.c.i
+
+.PHONY : n_tubes_shell.i
+
+# target to preprocess a source file
+n_tubes_shell.c.i:
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/n_tubes_shell.c.i
+.PHONY : n_tubes_shell.c.i
+
+n_tubes_shell.s: n_tubes_shell.c.s
+
+.PHONY : n_tubes_shell.s
+
+# target to generate assembly for a file
+n_tubes_shell.c.s:
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/n_tubes_shell.c.s
+.PHONY : n_tubes_shell.c.s
+
 producer_consumer.o: producer_consumer.c.o
 
 .PHONY : producer_consumer.o
@@ -358,6 +398,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ex7"
 	@echo "... ex6"
 	@echo "... ex5"
 	@echo "... ex4"
@@ -373,6 +414,9 @@ help:
 	@echo "... juste_prix.o"
 	@echo "... juste_prix.i"
 	@echo "... juste_prix.s"
+	@echo "... n_tubes_shell.o"
+	@echo "... n_tubes_shell.i"
+	@echo "... n_tubes_shell.s"
 	@echo "... producer_consumer.o"
 	@echo "... producer_consumer.i"
 	@echo "... producer_consumer.s"

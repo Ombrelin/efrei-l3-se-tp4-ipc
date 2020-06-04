@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/ex7.dir/all
 all: CMakeFiles/ex6.dir/all
 all: CMakeFiles/ex5.dir/all
 all: CMakeFiles/ex4.dir/all
@@ -63,6 +64,7 @@ all: CMakeFiles/ex1.dir/all
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/ex7.dir/clean
 clean: CMakeFiles/ex6.dir/clean
 clean: CMakeFiles/ex5.dir/clean
 clean: CMakeFiles/ex4.dir/clean
@@ -76,6 +78,33 @@ clean: CMakeFiles/ex1.dir/clean
 preinstall:
 
 .PHONY : preinstall
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex7.dir
+
+# All Build rule for target.
+CMakeFiles/ex7.dir/all:
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/depend
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target ex7"
+.PHONY : CMakeFiles/ex7.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex7.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ex7.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marion/Documents/EFREI/l3-se-tp4-ipc/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex7.dir/rule
+
+# Convenience name for target.
+ex7: CMakeFiles/ex7.dir/rule
+
+.PHONY : ex7
+
+# clean rule for target.
+CMakeFiles/ex7.dir/clean:
+	$(MAKE) -f CMakeFiles/ex7.dir/build.make CMakeFiles/ex7.dir/clean
+.PHONY : CMakeFiles/ex7.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ex6.dir
