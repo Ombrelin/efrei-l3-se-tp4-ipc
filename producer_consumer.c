@@ -9,6 +9,11 @@
 
 int main (int argc, char** argv) {
 
+    if (argv[1] == NULL) {
+        perror("Veuillez fournir un argument contenant un mot\n");
+        exit(EXIT_FAILURE);
+    }
+
     int mypipe[2];
 
     if (pipe(mypipe) < 0) {
@@ -21,38 +26,55 @@ int main (int argc, char** argv) {
     switch (pid) {
         case -1:
             perror("Error forking\n");
-            exit(255);
+            exit(EXIT_FAILURE);
         case 0:
-            close(mypipe[0]);
-            int number = 6;
+            if (close(mypipe[0]) < 0) {
+                perror("[SON] Error closing mypipe reading\n");
+                exit(EXIT_FAILURE);
+            }
+
+            int number = strlen(argv[1]);
             int getPid = getpid();
+
             write(mypipe[1], &getPid, sizeof(int));
             write(mypipe[1], &number, sizeof(int));
-            char* string = "coucou";
 
-            for(int i = 0; i<strlen(string); i++) {
+            char* string = argv[1];
+
+            for (int i = 0; i < strlen(string); i++) {
                 write(mypipe[1], &(string[i]), sizeof(char));
             }
-            wait(NULL);
-            close(mypipe[1]);
+
+            if (close(mypipe[1]) < 0) {
+                perror("[SON] Error closing mypipe writing\n");
+                exit(EXIT_FAILURE);
+            }
             break;
         default:
-            close(mypipe[1]);
+            if (close(mypipe[1]) < 0) {
+                perror("[FATHER] Error closing mypipe writing\n");
+                exit(EXIT_FAILURE);
+            }
             int ch;
             int get_pid;
             int nbChar;
 
+            wait(NULL);
+
             read(mypipe[0], &get_pid, sizeof(int));
-            printf("%d\n", get_pid);
+            printf("PID: %d\n", get_pid);
             read(mypipe[0], &nbChar, sizeof(int));
-            printf("%d\n", nbChar);
+            printf("NBCHAR: %d\n", nbChar);
 
             for (int i = 0; i < nbChar; i++) {
                 read(mypipe[0], &ch, sizeof(char));
-                printf("%c \n", ch);
+                printf("LETTER: %c \n", ch);
             }
 
-            close(mypipe[0]);
+            if (close(mypipe[0]) < 0) {
+                perror("[FATHER] Error closing mypipe reading\n");
+                exit(EXIT_FAILURE);
+            }
             break;
     }
 
