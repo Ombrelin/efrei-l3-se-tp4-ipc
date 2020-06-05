@@ -59,8 +59,6 @@ int main (int argc, char** argv) {
             int get_pid;
             int nbChar;
 
-            wait(NULL);
-
             read(mypipe[0], &get_pid, sizeof(int));
             printf("PID: %d\n", get_pid);
             read(mypipe[0], &nbChar, sizeof(int));
