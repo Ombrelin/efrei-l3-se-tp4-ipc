@@ -39,8 +39,19 @@ int main(int argc, char** argv) {
 
     free(buffer);
 
-    close(readFileFd);
-    close(writtenFileFd);
+    int closeReadFileFd = close(readFileFd);
+    int closeWrittenFileFd = close(writtenFileFd);
+
+    if(closeReadFileFd < 0){
+        perror("Error closing file\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if(closeWrittenFileFd < 0){
+        perror("Error closing file\n");
+        exit(EXIT_FAILURE);
+    }
+
 
     return 0;
 }

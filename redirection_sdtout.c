@@ -10,7 +10,11 @@ void rediriger(char * filename){
         exit(EXIT_FAILURE);
     }
     printf("Après redirection\n");
-    fclose(file);
+    int closeFile = fclose(file);
+    if(closeFile < 0){
+        perror("Error while closing file\n");
+        exit(EXIT_FAILURE);
+    }
 }
 
 int main(int argc, char** argv){

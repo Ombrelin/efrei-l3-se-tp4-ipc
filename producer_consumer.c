@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdio.h>
 
-int main (int argc, char** argv) {
+int main(int argc, char **argv) {
 
     if (argv[1] == NULL) {
         perror("Veuillez fournir un argument contenant un mot\n");
@@ -36,13 +36,27 @@ int main (int argc, char** argv) {
             int number = strlen(argv[1]);
             int getPid = getpid();
 
-            write(mypipe[1], &getPid, sizeof(int));
-            write(mypipe[1], &number, sizeof(int));
+            int writePid = write(mypipe[1], &getPid, sizeof(int));
+            int writeNumber = write(mypipe[1], &number, sizeof(int));
 
-            char* string = argv[1];
+            if (writePid < 0) {
+                perror("[SON] Error writing pipe\n");
+                exit(EXIT_FAILURE);
+            }
+
+            if (writeNumber < 0) {
+                perror("[SON] Error writing pipe\n");
+                exit(EXIT_FAILURE);
+            }
+
+            char *string = argv[1];
 
             for (int i = 0; i < strlen(string); i++) {
-                write(mypipe[1], &(string[i]), sizeof(char));
+                int writeString = write(mypipe[1], &(string[i]), sizeof(char));
+                if (writeString < 0){
+                    perror("[SON] Error writing pipe\n");
+                    exit(EXIT_FAILURE);
+                }
             }
 
             if (close(mypipe[1]) < 0) {
@@ -59,13 +73,25 @@ int main (int argc, char** argv) {
             int get_pid;
             int nbChar;
 
-            read(mypipe[0], &get_pid, sizeof(int));
+            int readPid = read(mypipe[0], &get_pid, sizeof(int));
+            if (readPid < 0){
+                perror("[SON] Error writing pipe\n");
+                exit(EXIT_FAILURE);
+            }
             printf("PID: %d\n", get_pid);
-            read(mypipe[0], &nbChar, sizeof(int));
+            int readNbChar = read(mypipe[0], &nbChar, sizeof(int));
+            if (readNbChar < 0){
+                perror("[SON] Error writing pipe\n");
+                exit(EXIT_FAILURE);
+            }
             printf("NBCHAR: %d\n", nbChar);
 
             for (int i = 0; i < nbChar; i++) {
-                read(mypipe[0], &ch, sizeof(char));
+                int readChar = read(mypipe[0], &ch, sizeof(char));
+                if (readChar < 0){
+                    perror("[SON] Error writing pipe\n");
+                    exit(EXIT_FAILURE);
+                }
                 printf("LETTER: %c \n", ch);
             }
 
