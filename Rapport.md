@@ -92,7 +92,7 @@ Dans ce programme, nous avons utilisé la fonction ```dup2``` de la librairie un
 
 ## Question 7
 
-Nous avons tenté de résoudre ce problème mais nous ne somme pas parvenu à réaliser un code qui permettrait de faire en sorte que chaque processus fils puisse s'exécuter dans le bon ordre afin de pouvoir exploiter le résultat sur précédent au moins d'exécuter sa commande.
+Nous avons tenté de résoudre ce problème mais nous ne somme pas parvenu à réaliser un code qui permettrait de faire en sorte que chaque processus fils puisse s'exécuter dans le bon ordre afin de pouvoir exploiter le résultat du précédent au moment d'exécuter sa commande.
 
-Nous avons essayé un certain nombre de démarche mais nous ne sommes pas parvenu à un résultat concluant.
+Nous avons essayé un certain nombre de démarches mais nous ne sommes pas parvenu à un résultat concluant.
 </div>
